@@ -1,4 +1,4 @@
-UserService = function(app) {
+var UserService = function(app) {
 	var User = require('./User');
 	var User = new User();
 	var PDO = app.get('PDO');
@@ -36,6 +36,6 @@ UserService = function(app) {
 			res.send({ cod: cod });
 		})
 	});
-};
+}
 
-export default UserService;
+module.exports = UserService;
