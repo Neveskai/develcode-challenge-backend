@@ -1,0 +1,32 @@
+{
+	"name": "nodewebserver",
+	"version": "1.0.0",
+	"description": "Web Server using Node, Nodemon, VueJS, FileHandler",
+	"main": "index.js",
+	"keywords": [
+		"server"
+	],
+	"author": "Wendell S. Neves",
+	"license": "ISC",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"mysql": "^2.18.1",
+		"node-url-shortener": "^2.0.0",
+		"nodemailer": "^6.7.2",
+		"shortid": "^2.2.16",
+		"valid-url": "^1.0.9"
+	},
+	"devDependencies": {
+		"jest": "^27.4.7"
+	},
+	"jest": {
+		"moduleFileExtensions": [
+			"js",
+			"json"
+		]
+	},
+	"scripts":{
+		"test": "jest"
+	}
+}
