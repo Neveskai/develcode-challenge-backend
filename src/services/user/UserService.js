@@ -30,8 +30,8 @@ var UserService = function(app) {
 		})
 	});
 
-	app.delete('/user/delete/:id', function(req, res) {
-		const id = req.get.id;
+	app.delete('/user/delete', function(req, res) {
+		const id = req.body.id;
 		User.delUser(PDO, id).then(cod => {
 			res.send({ cod: cod });
 		})
